@@ -1,0 +1,25 @@
+# Config file for https://travis-ci.org/
+
+language: php
+
+# Define the php versions against we want to test our code
+php:
+- 7.4
+
+install:
+- travis_retry composer install --no-interaction
+
+before_script:
+- php -S 127.0.0.1:8000 >/dev/null 2>&1 &
+
+script:
+- composer test
+
+# Monitor only these branches
+branches:
+  only:
+  - main
+
+cache:
+  directories:
+    - $HOME/.composer/cache

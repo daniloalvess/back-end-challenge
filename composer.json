@@ -1,0 +1,26 @@
+{
+    "name": "daniloalvess/suno-back-end-challenge",
+    "description": "Desafio para os futuros programadores back-end da Squad de Portais da Suno Research.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danilo Alves",
+            "email": "daniloalves.ti@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/codecept run"
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "codeception/module-rest": "^1.0.0"
+    }
+}
