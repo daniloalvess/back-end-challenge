@@ -25,9 +25,43 @@ Desenvolva uma **REST API** que faça conversão de moedas.
     * De Dólar para Real;
     * De Real para Euro;
     * De Euro para Real;
+* Símbolos esperados:
+    * Real: R$
+    * Dólar: $
+    * Euro: €
 * Serão executados testes automatizados para validação dos requisitos:
    * Levantar servidor embutido do PHP: `php -S localhost:8000 index.php`;
    * Executando testes: `composer test`;
+
+**Outros Exemplos:**
+
+* Dólar para Real:
+    * http://localhost:8000/exchange/USD/BRL/?amount=100&price=5.58
+    * A resposta deve seguir o seguinte formato:
+   ```json
+   {
+     "convertedValue": 558,
+     "symbol": "R$"
+   }
+   ```
+* Euro para Real:
+    * http://localhost:8000/exchange/EUR/BRL/?amount=100&price=6.70
+    * A resposta deve seguir o seguinte formato:
+   ```json
+   {
+     "convertedValue": 670,
+     "symbol": "R$"
+   }
+   ```
+* Real para Euro:
+    * http://localhost:8000/exchange/BRL/EUR/?amount=100&price=6.70
+    * A resposta deve seguir o seguinte formato:
+   ```json
+   {
+     "convertedValue": 14.93,
+     "symbol": "€"
+   }
+   ```
 
 ## Instruções
 
