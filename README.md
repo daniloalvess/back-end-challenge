@@ -6,7 +6,7 @@ Desafio para os futuros programadores back-end da Squad de Portais da Suno.
 
 Desenvolva uma **REST API** que faça conversão de moedas.
 
-**Especifícações**:
+**Especificações**:
 
 * A URL da requisição deve seguir o seguinte formato:
    * http://localhost:8000/exchange/{from}/{to}/?amount={amount}&price={price}
@@ -31,7 +31,7 @@ Desenvolva uma **REST API** que faça conversão de moedas.
     * Euro: €
 * Serão executados testes automatizados para validação dos requisitos:
    * Levantar servidor embutido do PHP: `php -S localhost:8000 index.php`;
-   * Executando testes: `composer test`;
+   * Executar testes: `composer test`;
 
 **Outros Exemplos:**
 
