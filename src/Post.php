@@ -41,10 +41,19 @@ class Post {
         'USD' => '$', 
         'EUR' => '€'
     ];
-    $result = [
-        "convertedValue" => $amount*$price,
-        "symbol" => $currency[$currencyTo]
-    ];
+    
+    if($currencyFrom == 'BRL'){
+      $result = [
+          "convertedValue" => number_format($amount/$price,2),
+          "symbol" => $currency[$currencyTo]
+      ];
+    } else {
+        $result = [
+          "convertedValue" => $amount*$price,
+          "symbol" => $currency[$currencyTo]
+      ];
+    }
+
     $response['body'] = json_encode($result);
     return $response;
   }
