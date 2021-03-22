@@ -34,7 +34,7 @@ class Post {
     }
   }
 
-  public function CurrencyConvert(string $currencyFrom, string $currencyTo, float $amount, float $price)
+  public function CurrencyConvert($currencyFrom, $currencyTo, $amount, $price)
   {
     $currency = [
         'BRL' => 'R$', 
@@ -42,7 +42,7 @@ class Post {
         'EUR' => '€'
     ];
     $result = [
-        "convertedValue" => number_format($amount*$price, 2),
+        "convertedValue" => $amount*$price,
         "symbol" => $currency[$currencyTo]
     ];
     $response['body'] = json_encode($result);
