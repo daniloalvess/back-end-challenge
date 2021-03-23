@@ -1,6 +1,6 @@
 # Back-End Challenge
 
-Desafio para os futuros programadores back-end da Squad de Portais da Suno.
+Desafio para futuros programadores back-end.
 
 ## Introdução
 

@@ -1,6 +1,6 @@
 {
-    "name": "daniloalvess/suno-back-end-challenge",
-    "description": "Desafio para os futuros programadores back-end da Squad de Portais da Suno Research.",
+    "name": "daniloalvess/back-end-challenge",
+    "description": "Desafio para futuros programadores back-end.",
     "type": "project",
     "license": "MIT",
     "authors": [
