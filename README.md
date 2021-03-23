@@ -12,7 +12,7 @@ Desenvolva uma **REST API** que faça conversão de moedas.
    * http://localhost:8000/exchange/{from}/{to}/?amount={amount}&price={price}
    * http://localhost:8000/exchange/BRL/USD/?amount=100&price=5.58
    * Onde **amount** equivale ao valor total a ser convertido.
-   * Onde **price** equivale ao valor da cotação da moeda de referência. Em nosso exemplo estamos convertendo de real para dólar. Portanto, **price** é referente a cotação do dólar (5.58).
+   * Onde **price** equivale ao valor da cotação da moeda de referência, SEMPRE de moedas fortes (Dólar ou Euro). Em nosso exemplo estamos convertendo de real para dólar. Portanto, **price** é referente a cotação do dólar (5.58).
 * A resposta deve seguir o seguinte formato:
    ```json
    {
