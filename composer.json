@@ -22,5 +22,9 @@
         "codeception/module-phpbrowser": "^1.0.0",
         "codeception/module-asserts": "^1.0.0",
         "codeception/module-rest": "^1.0.0"
+    },
+    "require": {
+        "slim/slim": "^4.7",
+        "slim/psr7": "dev-master"
     }
 }
